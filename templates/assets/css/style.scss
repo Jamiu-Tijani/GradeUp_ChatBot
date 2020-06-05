@@ -29,6 +29,12 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 30% 50% 20%;
+  @media (max-width: 900px) {
+    grid-template-columns: 40% 60%;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 100%;
+  }
 }
 .feeds,
 .chat__screen,
@@ -40,6 +46,9 @@ body {
 .feeds {
   background: $primary;
   border-top-right-radius: 2rem;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .chat__screen {
@@ -50,7 +59,18 @@ body {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
+
+  .fixed-input {
+    background: $grey;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    top: 83vh;
+  }
 }
 .about {
   background: $white;
+  @media (max-width: 900px) {
+    display: none;
+  }
 }
