@@ -87,10 +87,18 @@ body {
           flex-direction: column;
 }
 
+.chat__screen .main__chat-screen .chat-block {
+  display: block;
+}
+
+.chat__screen .main__chat-screen .chat-block > .user__block {
+  float: right;
+}
+
 .chat__screen .main__chat-screen .block {
   width: 40%;
   padding: 2rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin: 1rem 0;
 }
 

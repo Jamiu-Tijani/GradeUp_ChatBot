@@ -26,11 +26,11 @@ body {
 
 // Utilities
 #user-input {
-    padding: 2.5rem;
-    background: $grey;
-    outline: none;
-    border: none;
-    width: 100%;
+  padding: 2.5rem;
+  background: $grey;
+  outline: none;
+  border: none;
+  width: 100%;
 }
 
 .container {
@@ -70,31 +70,36 @@ body {
   }
 
   .main__chat-screen {
-      height: 82.5vh;
+    height: 82.5vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .chat-block {
+      display: block;
+      & > .user__block {
+        float: right;
+      }
+    }
+
+    .block {
+      width: 40%;
       padding: 2rem;
-      display: flex;
-      flex-direction: column;
+      border-radius: 0.5rem;
+      margin: 1rem 0;
 
-      .block {
-        width: 40%;
-        padding: 2rem;
-        border-radius: .5rem;
-        margin: 1rem 0;
-
-        @media (max-width: 768px){
-            width: 60%;
-        }
+      @media (max-width: 768px) {
+        width: 60%;
       }
+    }
 
-      .user__block {
-          background: $primary;
-          color: $white;
-          justify-content: flex-end;
-
-      }
-      .bot__block {
-        background: $grey;
-
+    .user__block {
+      background: $primary;
+      color: $white;
+      justify-content: flex-end;
+    }
+    .bot__block {
+      background: $grey;
     }
   }
 
@@ -103,17 +108,17 @@ body {
     width: 100%;
 
     form {
-        display: grid;
-        grid-template-columns: 70% 30%;
+      display: grid;
+      grid-template-columns: 70% 30%;
 
-        button {
-            border: none;
-            color: $white;
-            background: $primary;
-            cursor: pointer;
-            font-weight: bold;
-            outline: none;
-        }
+      button {
+        border: none;
+        color: $white;
+        background: $primary;
+        cursor: pointer;
+        font-weight: bold;
+        outline: none;
+      }
     }
   }
 }
