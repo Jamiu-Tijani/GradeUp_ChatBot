@@ -25,10 +25,31 @@
       </div>
 
       <!-- Main Chat Screen -->
-      <div class="main__chat-screen"></div>
+      <div class="main__chat-screen">
+
+        <div class="chat-block">
+          <div class="block user__block">
+            {{user_input}}
+          </div>
+        </div>
+
+        <div class="chat-block">
+          <div class="block bot__block">
+            {{bot_response}}
+          </div>
+        </div>
+
+      </div>
 
       <!-- Bottom Fixed Input Field -->
-      <div class="fixed-input"></div>
+      <div class="user-input-field">
+        <form action="/process" method="POST">
+          <input type="text" aria-label="user-input" name="user_input" id="user-input"
+            placeholder="Type your message here... ">
+
+          <button type="submit">SEND</button>
+        </form>
+      </div>
     </div>
     <div class="about"></div>
   </div>

@@ -24,6 +24,15 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+// Utilities
+#user-input {
+    padding: 2.5rem;
+    background: $grey;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -60,12 +69,52 @@ body {
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
-  .fixed-input {
+  .main__chat-screen {
+      height: 82.5vh;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+
+      .block {
+        width: 40%;
+        padding: 2rem;
+        border-radius: .5rem;
+        margin: 1rem 0;
+
+        @media (max-width: 768px){
+            width: 60%;
+        }
+      }
+
+      .user__block {
+          background: $primary;
+          color: $white;
+          justify-content: flex-end;
+
+      }
+      .bot__block {
+        background: $grey;
+
+    }
+  }
+
+  .user-input-field {
     background: $grey;
     width: 100%;
-    height: 60px;
-    position: relative;
-    top: 83vh;
+
+    form {
+        display: grid;
+        grid-template-columns: 70% 30%;
+
+        button {
+            border: none;
+            color: $white;
+            background: $primary;
+            cursor: pointer;
+            font-weight: bold;
+            outline: none;
+        }
+    }
   }
 }
 .about {
