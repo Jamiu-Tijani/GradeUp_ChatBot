@@ -54,7 +54,7 @@ body {
 }
 
 .feeds {
-  background: #0fa666;
+  background: #2A22B3;
   border-top-right-radius: 2rem;
 }
 
@@ -109,7 +109,7 @@ body {
 }
 
 .chat__screen .main__chat-screen .user__block {
-  background: #0fa666;
+  background: #2A22B3;
   color: #ffffff;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -135,7 +135,7 @@ body {
 .chat__screen .user-input-field form button {
   border: none;
   color: #ffffff;
-  background: #0fa666;
+  background: #2A22B3;
   cursor: pointer;
   font-weight: bold;
   outline: none;
